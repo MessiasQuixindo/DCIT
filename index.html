@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071a31">
+<title>DCIT — Portal Interno</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="logo">DC<span>IT</span><small>DEPARTAMENTO DE COMUNICAÇÃO,<br>IMAGEM E TECNOLOGIA</small></div>
+  <nav>
+    <button class="nav active" data-page="inicio">⌂ <span>Início</span></button>
+    <button class="nav" data-page="avisos">! <span>Avisos</span></button>
+    <button class="nav" data-page="agenda">□ <span>Agenda</span></button>
+    <button class="nav" data-page="tarefas">✓ <span>Tarefas</span></button>
+    <button class="nav" data-page="projetos">▣ <span>Projetos</span></button>
+    <button class="nav" data-page="ficheiros">▤ <span>Ficheiros</span></button>
+    <button class="nav" data-page="equipa">♧ <span>Equipa</span></button>
+    <button class="nav" data-page="chat">☁ <span>Chat</span></button><button class="nav" data-page="definicoes">⚙ <span>Definições</span></button>
+  </nav>
+  <div class="user"><b>EQ</b><div><strong>Eufrásio Quixindo</strong><small>Administrador</small></div></div>
+</aside>
+
+<main>
+<header class="topbar">
+  <button id="menu" class="mobile">☰</button>
+  <div class="search">⌕ <input id="search" placeholder="Pesquisar..."></div>
+  <div class="top-right"><button id="theme">☼</button><button id="logout">Sair</button><button id="bell">♧<i>3</i></button><b>EQ</b></div>
+</header>
+
+<div class="content" id="content">
+
+<section class="page active" id="inicio">
+  <div class="heading"><div><small>PORTAL INTERNO DCIT</small><h1>Olá, Messias</h1><p>Que bom ter você de volta ao DCIT.</p></div><span>Domingo, 30 de Agosto de 2026</span></div>
+  <div class="stats">
+    <article><b>✓</b><div><small>TAREFAS PENDENTES</small><strong>08</strong><em>+2 desde ontem</em></div></article>
+    <article><b>□</b><div><small>EVENTOS HOJE</small><strong>03</strong><em>Ver agenda</em></div></article>
+    <article><b>▣</b><div><small>PROJETOS ATIVOS</small><strong>04</strong><em>Em andamento</em></div></article>
+    <article><b>!</b><div><small>AVISOS NÃO LIDOS</small><strong>05</strong><em>Ver avisos</em></div></article>
+  </div>
+  <div class="cols">
+    <article class="card"><div class="cardhead"><h2>Próximos eventos</h2><button data-page="agenda">Ver todos</button></div>
+      <div class="rows" id="dashboardEvents"></div>
+    </article>
+    <article class="card"><div class="cardhead"><h2>Avisos recentes</h2><button data-page="avisos">Ver todos</button></div>
+      <div class="rows" id="dashboardNotices"></div>
+    </article>
+  </div>
+  <article class="card">
+    <div class="cardhead">
+      <h2>Acesso rápido</h2>
+    </div>
+    <div class="quick">
+    <button data-page="agenda">□<span>Agenda</span>
+    </button>
+    <button data-page="tarefas">✓<span>Tarefas</span>
+    </button>
+    <button data-page="projetos">▣<span>Projetos</span>
+    </button><button data-page="ficheiros">▤<span>Ficheiros</span>
+    </button>
+    <button data-page="equipa">♧<span>Equipa</span>
+    </button>
+    <button data-page="avisos">!<span>Avisos</span>
+    </button>
+  </div>
+</article>
+</section>
+
+<section class="page" id="avisos">
+  <div class="heading"><div>
+    <small>COMUNICAÇÃO INTERNA</small>
+    <h1>Avisos</h1>
+    <p>Informações importantes para toda a equipa.</p>
+  </div>
+  <button class="primary" data-modal="Novo aviso">+ Novo aviso</button>
+</div>
+<article class="card">
+  <div class="toolbar">
+    <div class="local">⌕ <input placeholder="Pesquisar avisos...">
+    </div><div class="tabs"><b>Todos</b><span>Importantes</span>
+      <span>Informativos</span>
+    </div>
+  </div>
+<div class="large">
+<div class="list">
+  <b>!</b>
+  <div>
+    <strong>Escala do próximo domingo</strong>
+    <p>A escala para o próximo domingo já está disponível.</p>
+    <small>Hoje, 09:30</small>
+  </div>
+  <label>Importante</label>
+</div>
+<div class="list">
+  <b>!</b>
+  <div>
+    <strong>Entrega de artes</strong>
+    <p>Lembramos que as artes devem ser entregues até sexta-feira.</p>
+    <small>Ontem, 16:45</small>
+  </div>
+  <label>Informativo</label>
+</div>
+<div class="list">
+  <b>!</b>
+  <div>
+    <strong>Reunião de alinhamento</strong>
+    <p>Reunião geral para alinhamento dos projetos em andamento.</p>
+    <small>29 Ago, 20:15</small>
+  </div>
+  <label>Importante</label>
+</div>
+<div class="list">
+  <b>!</b>
+  <div>
+    <strong>Treinamento de mídia</strong>
+    <p>Treinamento para novos membros da equipa de mídia.</p>
+    <small>28 Ago, 14:00</small>
+  </div>
+  <label>Informativo</label>
+</div>
+</div>
+</article>
+</section>
+
+<section class="page" id="agenda"><div class="heading"><div><small>ORGANIZAÇÃO</small><h1>Agenda</h1><p>Eventos e atividades do departamento.</p></div><button class="primary" data-modal="Novo evento">+ Novo evento</button></div>
+<div class="cols calendar-layout"><article class="card calendar"><div class="calendarhead"><button>‹</button><h2>Agosto 2026</h2><button>›</button></div><div class="week"><b>DOM</b><b>SEG</b><b>TER</b><b>QUA</b><b>QUI</b><b>SEX</b><b>SÁB</b></div><div id="days"></div></article>
+<article class="card"><div class="cardhead"><h2>Eventos de hoje</h2></div><div class="timeline"><div><b>14:00 - 16:00</b><strong>Reunião Geral DCIT</strong><small>Sala de Reuniões</small></div><div><b>16:00 - 18:00</b><strong>Preparação para culto</strong><small>Templo Central</small></div><div><b>19:00 - 21:00</b><strong>Culto da Juventude</strong><small>Templo Central</small></div></div></article></div></section>
+
+<section class="page" id="tarefas"><div class="heading"><div><small>PRODUÇÃO</small><h1>Tarefas</h1><p>Organize e acompanhe o trabalho da equipa.</p></div><button class="primary" data-modal="Nova tarefa">+ Nova tarefa</button></div>
+<article class="card"><div class="toolbar"><div class="local">⌕ <input placeholder="Pesquisar tarefas..."></div><div class="tabs"><b>Todas</b><span>Minhas</span><span>Pendentes</span><span>Concluídas</span></div></div>
+<div class="tasks">
+<label><input type="checkbox"><span><strong>Editar vídeo do culto domingo</strong><small>Prazo: 30 Ago</small></span><em class="high">Alta</em><b>EQ</b></label>
+<label><input type="checkbox"><span><strong>Criar arte - Culto da Juventude</strong><small>Prazo: 31 Ago</small></span><em class="medium">Média</em><b>EQ</b></label>
+<label><input type="checkbox"><span><strong>Configurar transmissão ao vivo</strong><small>Prazo: 01 Set</small></span><em class="high">Alta</em><b>EQ</b></label>
+<label><input type="checkbox"><span><strong>Organizar fotos do evento</strong><small>Prazo: 02 Set</small></span><em class="low">Baixa</em><b>EQ</b></label>
+<label><input type="checkbox"><span><strong>Atualizar site do departamento</strong><small>Prazo: 03 Set</small></span><em class="medium">Média</em><b>EQ</b></label>
+</div></article></section>
+
+<section class="page" id="projetos"><div class="heading"><div><small>TRABALHOS EM ANDAMENTO</small><h1>Projetos</h1><p>Acompanhe os projetos do DCIT.</p></div><button class="primary" data-modal="Novo projeto">+ Novo projeto</button></div>
+<div class="projects">
+<div class="project"><div class="cover one"></div><strong>Transmissão Online</strong><small>Em andamento · 70%</small><div class="bar"><i style="width:70%"></i></div></div>
+<div class="project"><div class="cover two"></div><strong>Campanha de Mídia</strong><small>Em andamento · 40%</small><div class="bar"><i style="width:40%"></i></div></div>
+<div class="project"><div class="cover three"></div><strong>Culto da Juventude</strong><small>Em andamento · 90%</small><div class="bar"><i style="width:90%"></i></div></div>
+<div class="project"><div class="cover four"></div><strong>Novo Site DCIT</strong><small>Em andamento · 20%</small><div class="bar"><i style="width:20%"></i></div></div>
+</div></section>
+
+<section class="page" id="ficheiros"><div class="heading"><div><small>ARQUIVO INTERNO</small><h1>Ficheiros</h1><p>Artes, vídeos, fotos e documentos da equipa.</p></div><label class="primary upload-btn">+ Enviar<input id="uploadFile" type="file" hidden></label></div>
+<article class="card"><div class="local wide">⌕ <input placeholder="Pesquisar ficheiros..."></div><div class="files"><div class="filehead"><span>Nome</span><span>Categoria</span><span>Tamanho</span><span>Atualizado</span></div>
+<div><span>📁 Artes</span><span>Pasta</span><span>—</span><span>Hoje, 08:15</span></div><div><span>📁 Vídeos</span><span>Pasta</span><span>—</span><span>Ontem, 16:40</span></div><div><span>📁 Fotos</span><span>Pasta</span><span>—</span><span>29 Ago, 20:10</span></div><div><span>📁 Documentos</span><span>Pasta</span><span>—</span><span>28 Ago, 11:30</span></div><div><span>📄 Escala_Proximo_Domingo.pdf</span><span>PDF</span><span>1.2 MB</span><span>Hoje, 09:30</span></div><div><span>📄 Manual_Transmissao.pdf</span><span>PDF</span><span>3.5 MB</span><span>28 Ago, 10:00</span></div></div></article></section>
+
+<section class="page" id="equipa"><div class="heading"><div><small>PESSOAS</small><h1>Equipa</h1><p>Conheça os membros e as suas funções.</p></div><button class="primary" data-modal="Novo membro">+ Adicionar</button></div>
+<article class="card"><div class="local wide">⌕ <input id="teamSearch" placeholder="Pesquisar membros..."></div><div class="members">
+<div><b>EQ</b><span><strong>Eufrásio Quixindo</strong><small>Administrador</small></span><em>Admin</em></div><div><b>LG</b><span><strong>Lucas Gabriel</strong><small>Videomaker</small></span><em>Coordenador</em></div><div><b>MF</b><span><strong>Moisés Fernando</strong><small>Coordenador de Mídia</small></span><em>Coordenador</em></div><div><b>JP</b><span><strong>João Pedro</strong><small>Técnico de Áudio</small></span><em>Membro</em></div><div><b>DL</b><span><strong>Daniel Lucas</strong><small>Designer</small></span><em>Membro</em></div><div><b>SA</b><span><strong>Samuel Almeida</strong><small>Web Developer</small></span><em>Membro</em></div></div></article></section>
+
+<section class="page" id="chat"><div class="heading"><div><small>COMUNICAÇÃO INTERNA</small><h1>Chat da equipa</h1><p>Converse com os membros do DCIT neste dispositivo.</p></div></div><article class="card chat"><div id="chatMessages" class="chat-messages"></div><div class="chat-compose"><input id="chatInput" placeholder="Escreva uma mensagem..."><button class="primary" id="sendChat">Enviar</button></div></article></section>
+
+<section class="page" id="definicoes"><div class="heading"><div><small>CONTA</small><h1>Definições</h1><p>Personalize a sua conta e as preferências do portal.</p></div></div>
+<div class="settings"><article class="card menu-settings"><b>Perfil</b><span>Conta</span><span>Notificações</span><span>Segurança</span><span>Aparência</span></article>
+<article class="card"><h2>Informações do perfil</h2><div class="profile-edit"><b class="bigavatar">EQ</b><button class="secondary">Alterar foto</button></div><div class="form"><label>Nome completo<input id="profileName"></label><label>E-mail<input id="profileEmail"></label><label>Função<select id="profileRole"><option>Administrador</option><option>Coordenador</option><option>Membro</option></select></label><label>Telefone<input id="profilePhone"></label></div><button class="primary" id="saveProfile">Salvar alterações</button>
+
+<div class="security-box">
+
+  <h2>Credenciais do administrador</h2><p>Altere o nome de utilizador e a palavra-passe usados pelo administrador deste portal.</p><div class="form"><label>Nome de utilizador<input id="adminUsername" autocomplete="username"></label><label>Nova palavra-passe<input id="adminPassword" type="password" autocomplete="new-password" placeholder="Deixe vazio para manter"></label></div><button class="primary" id="saveCredentials">Guardar credenciais</button></div>
+
+<div class="settings-actions"><button class="secondary" id="exportData">Exportar backup</button><button class="secondary" id="resetData">Restaurar dados demo</button></div></article></div></section>
+
+</div></main></div>
+
+<div class="login show" id="login">
+  <div class="login-card">
+    <div class="logo">DC<span>IT</span>
+      <small>PORTAL INTERNO</small>
+    </div>
+    <h1>Acesso interno</h1>
+    <p>Entre com as credenciais do administrador.</p>
+    <label>Utilizador<input id="loginUser" autocomplete="username" value="admin"></label><label>Palavra-passe<input id="loginPass" type="password" autocomplete="current-password"></label><button class="primary" id="loginBtn">Entrar</button><small class="login-hint">Primeiro acesso: admin / admin123</small></div></div>
+<div class="toast" id="toast"></div>
+<div class="modal-bg" id="modal"><div class="modal"><button id="close">×</button><h2 id="modalTitle">Novo item</h2><label>Título<input id="modalInput" required></label><label>Descrição / função<textarea id="modalDesc"></textarea></label><button class="primary" id="save">Guardar</button></div></div>
+<script src="js/script.js"></script>
+</body>
+</html>
