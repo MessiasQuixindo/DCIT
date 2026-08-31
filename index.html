@@ -158,16 +158,49 @@
 <section class="page" id="chat"><div class="heading"><div><small>COMUNICAÇÃO INTERNA</small><h1>Chat da equipa</h1><p>Converse com os membros do DCIT neste dispositivo.</p></div></div><article class="card chat"><div id="chatMessages" class="chat-messages"></div><div class="chat-compose"><input id="chatInput" placeholder="Escreva uma mensagem..."><button class="primary" id="sendChat">Enviar</button></div></article></section>
 
 <section class="page" id="definicoes"><div class="heading"><div><small>CONTA</small><h1>Definições</h1><p>Personalize a sua conta e as preferências do portal.</p></div></div>
-<div class="settings"><article class="card menu-settings"><b>Perfil</b><span>Conta</span><span>Notificações</span><span>Segurança</span><span>Aparência</span></article>
-<article class="card"><h2>Informações do perfil</h2><div class="profile-edit"><b class="bigavatar">EQ</b><button class="secondary">Alterar foto</button></div><div class="form"><label>Nome completo<input id="profileName"></label><label>E-mail<input id="profileEmail"></label><label>Função<select id="profileRole"><option>Administrador</option><option>Coordenador</option><option>Membro</option></select></label><label>Telefone<input id="profilePhone"></label></div><button class="primary" id="saveProfile">Salvar alterações</button>
+<div class="settings">
+  <article class="card menu-settings">
+    <b>Perfil</b>
+    <span>Conta</span>
+    <span>Notificações</span>
+    <span>Segurança</span>
+    <span>Aparência</span>
+  </article>
+<article class="card">
+  <h2>Informações do perfil</h2>
+  <div class="profile-edit">
+    <b class="bigavatar">EQ</b>
+    <button class="secondary">Alterar foto</button>
+  </div>
+  <div class="form">
+    <label>Nome completo<input id="profileName"></label>
+    <label>E-mail<input id="profileEmail"></label>
+    <label>Função<select id="profileRole">
+      <option>Administrador</option>
+      <option>Coordenador</option>
+      <option>Membro</option>
+    </select>
+  </label>
+  <label>Telefone<input id="profilePhone">
+  </label>
+</div>
+<button class="primary" id="saveProfile">Salvar alterações</button>
 
 <div class="security-box">
 
   <h2>Credenciais do administrador</h2><p>Altere o nome de utilizador e a palavra-passe usados pelo administrador deste portal.</p><div class="form"><label>Nome de utilizador<input id="adminUsername" autocomplete="username"></label><label>Nova palavra-passe<input id="adminPassword" type="password" autocomplete="new-password" placeholder="Deixe vazio para manter"></label></div><button class="primary" id="saveCredentials">Guardar credenciais</button></div>
 
-<div class="settings-actions"><button class="secondary" id="exportData">Exportar backup</button><button class="secondary" id="resetData">Restaurar dados demo</button></div></article></div></section>
+<div class="settings-actions">
+  <button class="secondary" id="exportData">Exportar backup</button>
+  <button class="secondary" id="resetData">Restaurar dados demo</button>
+</div>
+</article>
+</div>
+</section>
 
-</div></main></div>
+</div>
+</main>
+</div>
 
 <div class="login show" id="login">
   <div class="login-card">
