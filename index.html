@@ -10,7 +10,9 @@
 <body>
 <div class="app">
 <aside class="sidebar" id="sidebar">
-  <div class="logo">DC<span>IT</span><small>DEPARTAMENTO DE COMUNICAÇÃO,<br>IMAGEM E TECNOLOGIA</small></div>
+  <div class="logo">DC<span>IT</span>
+    <small>DEPARTAMENTO DE COMUNICAÇÃO,<br>IMAGEM E TECNOLOGIA</small>
+  </div>
   <nav>
     <button class="nav active" data-page="inicio">⌂ <span>Início</span></button>
     <button class="nav" data-page="avisos">! <span>Avisos</span></button>
@@ -21,14 +23,26 @@
     <button class="nav" data-page="equipa">♧ <span>Equipa</span></button>
     <button class="nav" data-page="chat">☁ <span>Chat</span></button><button class="nav" data-page="definicoes">⚙ <span>Definições</span></button>
   </nav>
-  <div class="user"><b>EQ</b><div><strong>Eufrásio Quixindo</strong><small>Administrador</small></div></div>
+  <div class="user">
+    <b>EQ</b>
+    <div>
+      <strong>Messias Quixindo</strong>
+      <small>Administrador</small>
+    </div>
+  </div>
 </aside>
 
 <main>
 <header class="topbar">
   <button id="menu" class="mobile">☰</button>
   <div class="search">⌕ <input id="search" placeholder="Pesquisar..."></div>
-  <div class="top-right"><button id="theme">☼</button><button id="logout">Sair</button><button id="bell">♧<i>3</i></button><b>EQ</b></div>
+  <div class="top-right">
+    <button id="theme">☼</button>
+    <button id="logout">Sair</button>
+    <button id="bell">♧<i>3</i>
+    </button>
+    <b>EQ</b>
+  </div>
 </header>
 
 <div class="content" id="content">
@@ -42,11 +56,23 @@
     <article><b>!</b><div><small>AVISOS NÃO LIDOS</small><strong>05</strong><em>Ver avisos</em></div></article>
   </div>
   <div class="cols">
-    <article class="card"><div class="cardhead"><h2>Próximos eventos</h2><button data-page="agenda">Ver todos</button></div>
-      <div class="rows" id="dashboardEvents"></div>
+    <article class="card">
+      <div class="cardhead">
+      <h2>Próximos eventos</h2>
+      <button data-page="agenda">Ver todos</button>
+    </div>
+      <div class="rows" id="dashboardEvents">
+
+      </div>
     </article>
-    <article class="card"><div class="cardhead"><h2>Avisos recentes</h2><button data-page="avisos">Ver todos</button></div>
-      <div class="rows" id="dashboardNotices"></div>
+    <article class="card">
+      <div class="cardhead">
+        <h2>Avisos recentes</h2>
+        <button data-page="avisos">Ver todos</button>
+      </div>
+      <div class="rows" id="dashboardNotices">
+
+      </div>
     </article>
   </div>
   <article class="card">
@@ -125,11 +151,68 @@
 </article>
 </section>
 
-<section class="page" id="agenda"><div class="heading"><div><small>ORGANIZAÇÃO</small><h1>Agenda</h1><p>Eventos e atividades do departamento.</p></div><button class="primary" data-modal="Novo evento">+ Novo evento</button></div>
-<div class="cols calendar-layout"><article class="card calendar"><div class="calendarhead"><button>‹</button><h2>Agosto 2026</h2><button>›</button></div><div class="week"><b>DOM</b><b>SEG</b><b>TER</b><b>QUA</b><b>QUI</b><b>SEX</b><b>SÁB</b></div><div id="days"></div></article>
-<article class="card"><div class="cardhead"><h2>Eventos de hoje</h2></div><div class="timeline"><div><b>14:00 - 16:00</b><strong>Reunião Geral DCIT</strong><small>Sala de Reuniões</small></div><div><b>16:00 - 18:00</b><strong>Preparação para culto</strong><small>Templo Central</small></div><div><b>19:00 - 21:00</b><strong>Culto da Juventude</strong><small>Templo Central</small></div></div></article></div></section>
+<section class="page" id="agenda">
+  <div class="heading">
+    <div>
+      <small>ORGANIZAÇÃO</small>
+      <h1>Agenda</h1>
+      <p>Eventos e atividades do departamento.</p>
+    </div>
+    <button class="primary" data-modal="Novo evento">+ Novo evento</button>
+  </div>
+<div class="cols calendar-layout">
+  <article class="card calendar">
+    <div class="calendarhead">
+      <button>‹</button>
+      <h2>Agosto 2026</h2>
+      <button>›</button>
+    </div>
+    <div class="week">
+      <b>DOM</b>
+      <b>SEG</b>
+      <b>TER</b>
+      <b>QUA</b>
+      <b>QUI</b>
+      <b>SEX</b>
+      <b>SÁB</b>
+    </div>
+    <div id="days">
 
-<section class="page" id="tarefas"><div class="heading"><div><small>PRODUÇÃO</small><h1>Tarefas</h1><p>Organize e acompanhe o trabalho da equipa.</p></div><button class="primary" data-modal="Nova tarefa">+ Nova tarefa</button></div>
+    </div>
+  </article>
+  <article class="card">
+    <div class="cardhead">
+      <h2>Eventos de hoje</h2>
+    </div>
+    <div class="timeline">
+      <div>
+        <b>14:00 - 16:00</b>
+        <strong>Reunião Geral DCIT</strong>
+        <small>Sala de Reuniões</small>
+      </div>
+      <div>
+        <b>16:00 - 18:00</b>
+        <strong>Preparação para culto</strong>
+        <small>Templo Central</small>
+      </div>
+      <div>
+        <b>19:00 - 21:00</b>
+        <strong>Culto da Juventude</strong>
+        <small>Templo Central</small>
+      </div>
+    </div>
+  </article>
+</div>
+</section>
+
+<section class="page" id="tarefas">
+  <div class="heading">
+    <div>
+      <small>PRODUÇÃO</small>
+      <h1>Tarefas</h1>
+      <p>Organize e acompanhe o trabalho da equipa.</p>
+    </div>
+    <button class="primary" data-modal="Nova tarefa">+ Nova tarefa</button></div>
 <article class="card"><div class="toolbar"><div class="local">⌕ <input placeholder="Pesquisar tarefas..."></div><div class="tabs"><b>Todas</b><span>Minhas</span><span>Pendentes</span><span>Concluídas</span></div></div>
 <div class="tasks">
 <label><input type="checkbox"><span><strong>Editar vídeo do culto domingo</strong><small>Prazo: 30 Ago</small></span><em class="high">Alta</em><b>EQ</b></label>
